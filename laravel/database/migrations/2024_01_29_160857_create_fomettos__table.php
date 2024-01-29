@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('_fumetti', function (Blueprint $table) {
+        Schema::create('fomettos_', function (Blueprint $table) {
             $table->id();
             $table->string('titolo');
             $table->string('casaEditrice');
@@ -20,9 +20,6 @@ return new class extends Migration
             $table->date('anno');
             $table->boolean('oscar');
             $table->string('genere');
-
-
-
         });
     }
 
@@ -31,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('_fumetti');
+        Schema::dropIfExists('fomettos_');
     }
 };
