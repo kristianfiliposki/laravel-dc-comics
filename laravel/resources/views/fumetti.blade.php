@@ -7,6 +7,13 @@
     <title>fumetti</title>
 </head>
 <body>
-    
+    <div>
+        <h1>comics</h1>
+    </div>
 </body>
 </html>
+<style>
+    h1{
+        color: red;
+    }
+</style>

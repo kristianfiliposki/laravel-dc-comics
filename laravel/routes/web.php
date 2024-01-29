@@ -16,4 +16,6 @@ use App\Http\Models\Fumetto;
 */
 
 Route::get('/', [fumetti::class,"index"]);
-
+Route::get('fumetti', function (){
+    return view('fumetti');
+});
