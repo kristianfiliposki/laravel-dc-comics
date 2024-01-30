@@ -2,7 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\fumetti;
+use App\Http\Controllers\comics;
 use App\Http\Models\Fumetto;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +17,11 @@ use App\Http\Models\Fumetto;
 |
 */
 
-Route::get('/', [fumetti::class,"index"]);
+Route::get('/', function (){
+    return view('welcome');
+});
 Route::get('fumetti', function (){
     return view('fumetti');
 });
+
+Route::resource('fumetti',comics::class);

@@ -9,11 +9,11 @@ use App\Models\Fumetto;
 
 class fumetti extends Controller
 {
-    public function index(){
+/*     public function index(){
         
         $fumetti=Fumetto::all();
 
         return view('welcome',compact("fumetti"));
 
-    }
+    } */
 }
