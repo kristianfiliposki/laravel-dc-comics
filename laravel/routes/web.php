@@ -23,5 +23,8 @@ Route::get('/', function (){
 Route::get('fumetti', function (){
     return view('fumetti');
 });
+Route::get('logIn', function (){
+    return view('logIn');
+});
 
 Route::resource('fumetti',comics::class);

@@ -10,7 +10,6 @@
     <div>
         <h1>comics</h1>
         <ul>
-
             @foreach ($fumetti as $item)
                 <li>
                     {{$item->id}}
@@ -22,6 +21,7 @@
             @endforeach
         </ul>
     </div>
+    <a href="/">home</a>
 </body>
 </html>
 <style>

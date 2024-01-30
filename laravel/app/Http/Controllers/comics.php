@@ -33,13 +33,26 @@ class comics extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
+        $data= $request->all();
+        $newcomics=new Fumetto;
+        $newcomics->titolo = $data['titolo'];
+        $newcomics->casaEditrice = $data['casa_editrice'];
+        $newcomics->autore = $data['autore'];
+        $newcomics->copertina = $data['copertina'];
+        $newcomics->anno = $data['anno'];
+        $newcomics->oscar = $data['oscar'];
+        $newcomics->genere = $data['genere'];
+        $newcomics->save();
+
+        return redirect()->route('fumetti.index');
+
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show( $id)
     {
         //
     }
